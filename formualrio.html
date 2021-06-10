@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+       *{
+          box-sizing: border-box;
+        }
+        body{
+            background-color: #181818;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        [class*='col-']{
+          float:left;
+          padding: 15px;
+          
+        }
+        .row::after{
+          content: '';
+          display: table;
+          clear: both;
+        }
+        /*celulares*/
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}  
+        
+        /tablet/
+        @media only screen and (min-width:668px){
+          .col-m-1{width: 8.33%;}
+          .col-m-2{width: 16.66%;}
+          .col-m-3{width: 25%;}
+          .col-m-4{width: 33.33%;}
+          .col-m-5{width: 41.66%;}
+          .col-m-6{width: 50%;}
+          .col-m-7{width: 58.33%;}
+          .col-m-8{width: 66.66%;}
+          .col-m-9{width: 75%;}
+          .col-m-10{width: 83.33%;}
+          .col-m-11{width: 91.66%;}
+          .col-m-12{width: 100%;}  
+          
+        }
+        /pc/
+        @media only screen and (min-width:768px){
+          .col-g-1{width: 8.33%;}
+          .col-g-2{width: 16.66%;}
+          .col-g-3{width: 25%;}
+          .col-g-4{width: 33.33%;}
+          .col-g-5{width: 41.66%;}
+          .col-g-6{width: 50%;}
+          .col-g-7{width: 58.33%;}
+          .col-g-8{width: 66.66%;}
+          .col-g-9{width: 75%;}
+          .col-g-10{width: 83.33%;}
+          .col-g-11{width: 91.66%;}
+          .col-g-12{width: 100%;} 
+         
+        }
+        h1{
+            text-align: center;
+            font-size: 3em;
+        }
+        h1 span{
+            color: #B70E21;
+        }
+        @media all and (min-width:768px){
+            .container{
+                max-width: 850px;
+                height: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                box-shadow: 0 0 20px rgba(220,220,220,0.8);
+            }
+        }
+        .container{
+            background-color: #222222;
+            
+        }
+        input, textarea{
+            width: 100%;
+        }
+        input[type=text], input[type=email], textarea{
+            background-color: transparent;
+            color:white;
+            padding:10px 15px;
+            border:none;
+            outline: none;
+            border-bottom: 1px solid #B70E21 ;
+        }
+        input[type=submit]{
+            padding: 15px 15px;
+            background-color: #B70E21;
+            color:white;
+            text-transform: uppercase;
+            border:none;
+            outline: none;
+        }
+        .info{
+            background-color: black;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact <span>Us</span></h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-g-8 col-m-12">
+                <h3>Contact Us</h3>
+                <div class="col-g-6 col-m-6 col-12">
+                    <label for="name">FullName</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="col-g-6 col-m-6 col-12">
+                    <label for="mail">Email Adress</label>
+                    <input type="email" id="mail" name="mail">
+                </div>
+                <div class="col-g-6 col-m-6 col-12">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="col-g-6 col-m-6 col-12">
+                    <label for="affair">Affair</label>
+                    <input type="text" id="affair" name="affair">
+                </div>
+                <div class="col-g-12 col-m-12 col-12">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows=5></textarea>
+                </div>
+                <div class="col-g-12 col-m-12 col-12">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+            <div class="col-g-4 col-m-12 info">
+                <h3>More Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Bo. San Francisco</p>
+                <p><i class="fas fa-phone"></i> (504) 2772-0092</p>
+                <p><i class="fas fa-envelope-open-text"></i> info@maristascomayagua.edu.hn</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti excepturi earum, rem voluptatum nihil eaque voluptatem expedita neque a amet?</p>
+                <p>maristascomayagua.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

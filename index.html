@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+        }
+        [class*='col-']{
+          float:left;
+          
+      }
+        
+      .tamanob{
+          padding-top: 50px;
+          font-size:  60px;
+          line-height: 60px;
+      }
+      .tamanoh2b{
+          padding-top: 35px;
+          padding-bottom: 40px;
+      }
+      
+      .padding{
+          padding-left: 40px;
+      }
+      .boton{
+          color:black;
+          font-weight:bold;
+          text-decoration:none;
+          background-color: white;
+          margin-left: 40px;
+          padding: 15px 30px 18px 30px;
+      }
+
+
+      .idea{
+        height: 100vh;
+      }
+      .tamanoh2{
+          padding-left: 40px;
+          padding-top: 50px;
+          font-size: 50px;
+      }
+      .tidea{
+          background-color:transparent;
+      }
+      .lblancas{
+          color:white;
+      }
+      .tamanob{
+          padding-top: 50px;
+          font-size:  60px;
+          line-height: 60px;
+      }
+      .tamanoh2b{
+          padding-top: 35px;
+          padding-bottom: 40px;
+      }
+      .inicio{
+          width: 100%;
+          height: 100vh;
+          background-image: url("https://images.pexels.com/photos/6579062/pexels-photo-6579062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+          background-repeat: no-repeat;
+          background-size:1400px;
+      }
+      .padding{
+          padding-left: 40px;
+      }
+      .boton{
+          color:black;
+          font-weight:bold;
+          text-decoration:none;
+          background-color: white;
+          margin-left: 40px;
+          padding: 15px 30px 18px 30px;
+      }
+
+      /*Inicio de la segunda pantalla*/
+
+      .idea{
+          width: 100%;
+        height: 100vh;
+      }
+      .tamanoh2{
+          padding-left: 40px;
+          padding-top: 20px;
+          font-size: 50px;
+      }
+      .tidea{
+          width: 100%;
+          background-color:#F7F7F7;
+          height: 28%;
+      }
+      .contimg{
+          width: 100px;
+          margin-top: 20px;
+          background-color:white;
+          height: 60%;
+          margin-left: 40px;
+          box-shadow: 4px 4px 8px #6E6868;
+          margin-right: 20px;
+          display: none;
+      }
+      .contidea{
+          width: 100%;
+          height: 100%;
+          background-color: #F7F7F7;
+      }
+      .imgidea{
+          width: 70%;
+          height: 66%;
+          position: relative;
+          top: 15%;
+          left: 15%;
+      }
+      .continfo{
+          background-color:#F7F7F7;
+          height: 100%;
+      }
+      .h3idea{
+          font-size: 22px;
+          padding-left: 20px;
+          padding-bottom: 15px;
+      }
+      .pidea{
+          padding-left: 20px;
+          padding-bottom: 5px;
+      }
+
+      /*Inicio de la tercer pantalla*/
+
+      .crea{
+          height: 100vh;
+          background-color:#E9E9E9;
+      }
+      .tamanoh1n{
+          padding-top: 20px;
+          padding-left: 40px;
+          font-size: 60px;
+      }
+      .tamanoh3{
+          padding-left:40px;
+          padding-top: 20px;
+      }
+      .contcrea{
+          background-color: transparent;
+          width: 100%;
+      }
+      .infocrea{
+          width: 100%;
+          padding-left:40px;
+          color:#ADADAD;
+          background-color: #E9E9E9;
+          font-size: 25px;
+          line-height:78px;
+      }
+      .ifracrea{
+          height:0px;
+          background-color:orange;
+      }
+      .imgc{
+            width: 10px;
+            height: auto;
+            display: none;
+            border-top: 10px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+        }
+        
+        .portafolio:hover  ~ div .imagen1{
+            width: 600px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -320px;
+            left: 500px;
+            display: none;
+            
+        }
+        .portafolio:hover  ~ div .imagen11{
+            width: 200px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -600px;
+            left: 1000px;
+            background-image: url("https://images.pexels.com/photos/383568/pexels-photo-383568.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: 850px;
+            background-position: -97px -110px;
+            border-top: 15px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 15px;
+            display: none;
+        }
+        .portafolio:hover{
+            color: black;
+        }
+        
+        .blog:hover ~ div .imagen2{
+            width: 600px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -320px;
+            left: 500px;
+            display: none;
+        }
+        .blog:hover  ~ div .imagen22{
+            width: 200px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -600px;
+            left: 1000px;
+            background-image: url("https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: -200px -20px;
+            border-top: 15px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 15px;
+            display: none;
+        }
+        .blog:hover{
+            color: black;
+        }
+        
+        .tiendas:hover ~ div .imagen3{
+            width: 600px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -320px;
+            left: 500px;
+            display: none;
+        }
+        .tiendas:hover  ~ div .imagen33{
+            width: 200px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -600px;
+            left: 1000px;
+            background-image: url("https://images.pexels.com/photos/7289718/pexels-photo-7289718.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: -200px -70px;
+            border-top: 15px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 15px;
+            display: none;
+        }
+        .tiendas:hover{
+            color: black;
+        }
+        
+        .eventos:hover ~ div .imagen4{
+            width: 600px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -320px;
+            left: 500px;
+            display: none;
+        }
+        .eventos:hover  ~ div .imagen44{
+            width: 200px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -600px;
+            left: 1000px;
+            background-image: url("https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: -300px -100px;
+            border-top: 15px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 15px;
+            display: none;
+        }
+        .eventos:hover{
+            color: black;
+        }
+        
+        .imgfocus{
+            width: 600px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: 0px;
+            left: 500px;
+            background-image: url("https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: 0px 0px;
+            border-top: 10px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+           display: none;
+
+        }
+        .imgfocus1{
+            width: 200px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -600px;
+            left: 1000px;
+            background-image: url("https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: -300px -100px;
+            border-top: 10px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 15px;
+            display: none;
+        }
+        /*INICIO DEL MENU*/
+
+        .menu{
+            width: 100%;
+            background-color:black;
+            height: 50px;
+        }
+        .contmenu{
+            color: white;
+            float:left;
+            padding-top: 13px;
+            padding-right: 15px;
+            font-weight: bold;
+        }
+        .botonmenu{
+            float:left;
+            margin-top: 6px;
+            background-color:white;
+            padding:7px 13px 10px 13px;
+            font-weight: bold;
+            margin-left: 10px;
+            color: black;
+            display:none;
+        }
+        .logomenu{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .enlacesmenu{
+            color: white;
+        }
+        .botonmen{
+            color:black;
+            display:none;
+        }
+        .imglogo{
+            width: 48px;
+            height:auto;
+            position:relative;
+            top:-5px;
+        }
+        /*INICIO CUARTA PANTALLA*/
+        .descubre{
+            height:100vh;
+            background-color:#F7F7F7;
+            margin-top: 16px;
+        }
+        .tdescubre{
+            padding-top: 10px;
+            padding-left: 40px;
+            background-color: #F7F7F7;
+            height: 20%;
+            border-bottom: 1px solid #878787;
+        }
+        .infodescubre{
+            background-color:#F7F7F7;
+            height:80%;
+            padding-left: 40px;
+        }
+        .imgdescubre{
+          margin-top: 30px;
+          background-color:white;
+          height: 60%;
+          margin-left: 50px;
+          box-shadow: 4px 4px 8px #6E6868;
+          margin-right: 20px;
+          display: none;
+        }
+        .tamanodes{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 40px;
+            line-height:45px;
+        }
+        .h3descubre{
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .botondescubre{
+            text-decoration: nones;
+            color:black;
+            font-weight:bold;
+            font-size: 23px;
+        }
+        .imagendescubre{
+            width: 70%;
+          height: 66%;
+          position: relative;
+          top: 15%;
+          left: 15%;
+          border: 1px solid #D7D7D7;
+          display: none;
+        }
+        
+
+
+        @media only screen and (min-width:627px){
+        .col-m-1{width: 8.33%;}
+        .col-m-2{width: 16.66%;}
+        .col-m-3{width: 25%;}
+        .col-m-4{width: 33.33%;}
+        .col-m-5{width: 41.66%;}
+        .col-m-6{width: 50%;}
+        .col-m-7{width: 58.33%;}
+        .col-m-8{width: 66.66%;}
+        .col-m-9{width: 75%;}
+        .col-m-10{width: 83.33%;}
+        .col-m-11{width: 91.66%;}
+        .col-m-12{width: 100%;} 
+        .contmenu{
+            padding-left: 20px;
+        }
+        
+        .botonmenu{
+            display: none;
+        }
+        .botonmen{
+            display: none;
+        }
+        
+      
+      }
+      @media only screen and (min-width:1130px){
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}  
+        .lblancas{
+          color:white;
+      }
+      .tamanob{
+          padding-top: 50px;
+          font-size:  60px;
+          line-height: 60px;
+      }
+      .tamanoh2b{
+          padding-top: 35px;
+          padding-bottom: 40px;
+      }
+      .inicio{
+          height: 100vh;
+          background-image: url("https://images.pexels.com/photos/6579062/pexels-photo-6579062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+          background-repeat: no-repeat;
+          background-size:1300px;
+          background-position: 0px 0px;
+      }
+      .padding{
+          padding-left: 40px;
+      }
+      .boton{
+          color:black;
+          font-weight:bold;
+          text-decoration:none;
+          background-color: white;
+          margin-left: 40px;
+          padding: 15px 30px 18px 30px;
+      }
+
+      /*Inicio de la segunda pantalla*/
+
+      .idea{
+        height: 100vh;
+      }
+      .tamanoh2{
+          padding-left: 40px;
+          padding-top: 20px;
+          font-size: 50px;
+      }
+      .tidea{
+          background-color:#F7F7F7;
+          height: 28%;
+      }
+      .contimg{
+          margin-top: 20px;
+          background-color:white;
+          height: 60%;
+          margin-left: 40px;
+          box-shadow: 4px 4px 8px #6E6868;
+          margin-right: 20px;
+          display:block;
+      }
+      .contidea{
+          height: 100%;
+          background-color: #F7F7F7;
+      }
+      .imgidea{
+          width: 70%;
+          height: 66%;
+          position: relative;
+          top: 15%;
+          left: 15%;
+      }
+      .continfo{
+          background-color:#F7F7F7;
+          height: 68%;
+      }
+      .h3idea{
+          font-size: 22px;
+          padding-left: 120px;
+          padding-bottom: 15px;
+      }
+      .pidea{
+          padding-left: 120px;
+          padding-bottom: 5px;
+      }
+
+      /*Inicio de la tercer pantalla*/
+
+      .crea{
+          height: 100vh;
+          background-color:#E9E9E9;
+      }
+      .tamanoh1n{
+          padding-top: 20px;
+          padding-left: 40px;
+          font-size: 60px;
+      }
+      .tamanoh3{
+          padding-left:40px;
+          padding-top: 20px;
+      }
+      .contcrea{
+          background-color: green;
+          width: 100%;
+      }
+      .infocrea{
+          padding-left:40px;
+          color:#ADADAD;
+          background-color: #E9E9E9;
+          font-size: 25px;
+          line-height:78px;
+      }
+      .ifracrea{
+          height:0px;
+          background-color:orange;
+      }
+      .imgc{
+            width: 10px;
+            height: auto;
+            display: none;
+            border-top: 10px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+        }
+        
+        .portafolio:hover  ~ div .imagen1{
+            width: 600px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -320px;
+            left: 450px;
+            
+        }
+        .portafolio:hover  ~ div .imagen11{
+            width: 200px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -600px;
+            left: 950px;
+            background-image: url("https://images.pexels.com/photos/383568/pexels-photo-383568.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: 850px;
+            background-position: -97px -110px;
+            border-top: 15px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 15px;
+        }
+        .portafolio:hover{
+            color: black;
+        }
+        .portafolio:hover  ~ div .imgfocus{
+            display: none;
+        }
+        .portafolio:hover  ~ div .imgfocus1{
+            display: none;
+        }
+        .blog:hover ~ div .imagen2{
+            width: 600px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -320px;
+            left: 450px;
+        }
+        .blog:hover  ~ div .imagen22{
+            width: 200px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -600px;
+            left: 950px;
+            background-image: url("https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: -200px -20px;
+            border-top: 15px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 15px;
+        }
+        .blog:hover{
+            color: black;
+        }
+        .blog:hover  ~ div .imgfocus{
+            display: none;
+        }
+        .blog:hover  ~ div .imgfocus1{
+            display: none;
+        }
+        .tiendas:hover ~ div .imagen3{
+            width: 600px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -320px;
+            left: 450px;
+        }
+        .tiendas:hover  ~ div .imagen33{
+            width: 200px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -600px;
+            left: 950px;
+            background-image: url("https://images.pexels.com/photos/7289718/pexels-photo-7289718.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: -200px -70px;
+            border-top: 15px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 15px;
+        }
+        .tiendas:hover{
+            color: black;
+        }
+        .tiendas:hover  ~ div .imgfocus{
+            display: none;
+        }
+        .tiendas:hover  ~ div .imgfocus1{
+            display: none;
+        }
+        .eventos:hover ~ div .imagen4{
+            width: 600px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -320px;
+            left: 450px;
+        }
+        .eventos:hover  ~ div .imagen44{
+            width: 200px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -600px;
+            left: 950px;
+            background-image: url("https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: -300px -100px;
+            border-top: 15px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 15px;
+        }
+        .eventos:hover{
+            color: black;
+        }
+        .eventos:hover  ~ div .imgfocus{
+            display: none;
+        }
+        .eventos:hover  ~ div .imgfocus1{
+            display: none;
+        }
+        .imgfocus{
+            width: 600px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -320px;
+            left: 450px;
+            background-image: url("https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: 0px -100px;
+            border-top: 10px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+           
+
+        }
+        .imgfocus1{
+            width: 200px; 
+            height: 300px; 
+            display: block;
+            position: relative;
+            top: -600px;
+            left: 950px;
+            background-image: url("https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: 600px;
+            background-position: -300px -100px;
+            border-top: 15px;
+            border-left: 5px;
+            border-right: 5px;
+            border-bottom: 5px;
+            border-style: solid;
+            border-color: white;
+            border-radius: 15px;
+        }
+        /*INICIO DEL MENU*/
+
+        .menu{
+            width: 100%;
+            background-color:black;
+            height: 50px;
+        }
+        .contmenu{
+            color: white;
+            float:left;
+            padding-left: 0px;
+            padding-top: 13px;
+            padding-right: 110px;
+            font-weight: bold;
+        }
+        .botonmenu{
+            float:left;
+            margin-top: 6px;
+            background-color:white;
+            padding:7px 13px 10px 13px;
+            font-weight: bold;
+            margin-left: 10px;
+            color: black;
+            display:block;
+        }
+        .logomenu{
+            margin-left: 50px;
+            margin-right: 90px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .enlacesmenu{
+            color: white;
+        }
+        .botonmen{
+            color:black;
+            display: block;
+        }
+        .imglogo{
+            width: 48px;
+            height:auto;
+            position:relative;
+            top:-5px;
+        }
+        /*INICIO CUARTA PANTALLA*/
+        .descubre{
+            height:100vh;
+            background-color:#F7F7F7;
+            margin-top: 16px;
+        }
+        .tdescubre{
+            padding-top: 10px;
+            padding-left: 40px;
+            background-color: #F7F7F7;
+            height: 20%;
+            border-bottom: 1px solid #878787;
+        }
+        .infodescubre{
+            background-color:#F7F7F7;
+            height:80%;
+            padding-left: 40px;
+        }
+        .imgdescubre{
+          margin-top: 30px;
+          background-color:white;
+          height: 60%;
+          margin-left: 50px;
+          box-shadow: 4px 4px 8px #6E6868;
+          margin-right: 20px;
+          display: block;
+        }
+        .tamanodes{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 40px;
+            line-height:45px;
+        }
+        .h3descubre{
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .botondescubre{
+            text-decoration: nones;
+            color:black;
+            font-weight:bold;
+            font-size: 23px;
+        }
+        .imagendescubre{
+            width: 70%;
+          height: 66%;
+          position: relative;
+          top: 15%;
+          left: 15%;
+          border: 1px solid #D7D7D7;
+          display: block;
+        }
+      }
+      
+      
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="contmenu logomenu"><a class="enlacesmenu" href="index.html"><img class="imglogo" src="https://www.logo.wine/a/logo/GitHub/GitHub-Icon-White-Dark-Background-Logo.wine.svg"></a></div>
+        <div class="contmenu"><a class="enlacesmenu" href="blog.html">Blog</a></div>
+        <div class="contmenu"><a class="enlacesmenu" href="#">Plantillas</a></div>
+        <div class="contmenu"><a class="enlacesmenu" href="#">Diseñadores</a></div>
+        <div class="contmenu"><a class="enlacesmenu" href="contacto.html">Contacto</a></div>
+        <div class="botonmenu"><a class="botonmen" href="#">COMENZAR</a></div>
+    </div>
+    <div class="inicio col-m-12 col-12">
+        <h1 class="lblancas tamanob padding">Todo lo que necesitas<br> para crecer en linea.</h1>
+        <h2 class="lblancas  tamanoh2b padding">Herramientas simples para tus grandes ideas.<br> Empieza el periodo de pruba gratuito para tu sitio<br> web hoy. No se necesita una tarjeta de crédito</h2>
+        <a class="boton" href="plantillas.html">COMENZAR</a>
+    </div>
+    <div class="idea col-m-12 col-12">
+        <div class="tidea col-12">
+            <h1 class="tamanoh2">Haz realidad<br> tus ideas</h1>
+        </div>
+        <div class="contidea">
+            <div class="col-m-5 col-5 contimg">
+                <img class="imgidea" src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260">
+            </div>
+            <div class="col-m-6 col-6 continfo">
+                <h3 class="h3idea">Elige una plantilla para tu página web</h3>
+                <p class="pidea">Selecciona cualquiera de las plantillas para sitios web<br> líderes de la industria, fuentes de diseñador y paletas<br> de colores que mejor se adapten a tu estilo personal<br> y a tus necesidades profesionales.</p>
+                <h3 class="h3idea">Añade las herramientas que necesites</h3>
+                <p class="pidea">Evalúa qué herramientas quieres añadir, como una<br> tienda online, reserva de citas o tus extensiones<br> favoritas.</p>
+                <h3 class="h3idea">Llega a tu audiencia</h3>
+                <p class="pidea">Destaca en las bandejas de entrada y en las redes<br> sociales. Las campañas por correo electrónico con<br> sociales te ayudarán aumentar tu audiencia a través<br> de distintos canales.</p>
+            </div>
+        </div>
+    </div>
+    <div class="crea col-m-12 col-12">
+        <div class="tcrea col-m-12 col-12">
+            <h1 class="tamanoh1n">Crear<br> un sitio web</h1>
+            <h3 class="tamanoh3">Empieza eligiendo una de nuestras plantillas galardonadas y luego personalízala para que se adapte<br> a tu estilo y a tus necesidades profesionales</h3>
+        </div>
+        <div class="contcrea">
+            <div class="infocrea col-5">
+                <div class="portafolio">
+                    <h2>Portafolio</h2>
+                </div>
+                <div class="blog">
+                    <h2>Blog</h2>
+                </div>
+                <div class="tiendas">
+                    <h2>Tiendas en línea</h2>
+                </div>
+                <div class="eventos">
+                    <h2>Eventos y bodas</h2>
+                </div>
+                <div class="ifracrea col-6">
+                    <img class="imagen1 imgc"  src="https://images.pexels.com/photos/383568/pexels-photo-383568.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+                    <img class="imagen2 imgc"  src="https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+                    <img class="imagen3 imgc"  src="https://images.pexels.com/photos/7289718/pexels-photo-7289718.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+                    <img class="imagen4 imgc"  src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+                    <img class="imagen11 imgc"  />
+                    <img class="imagen22 imgc"  />
+                    <img class="imagen33 imgc"  />
+                    <img class="imagen44 imgc"  />
+                    <img class="imgfocus"  />
+                    <img class="imgfocus1"  />
+            </div>
+        </div>
+    </div>
+    <div class="descubre col-12 col-m-12">
+        <div class="tdescubre col-12 col-m-12">
+            <h1 class="tamanodes">Descubre cómo<br> comenzar.</h1>
+        </div>
+        <div class="infodescubre col-6 col-m-6" >
+            <h3 class="h3descubre">Cómo crear un sitio web</h3>
+            <p>01. Elige una plantilla y comienza una prueba gratuita.</p><br>
+            <p>02. Recibe un nombre de dominio personalizado gratuito durante el primer año del plan anual para sitios web.</p><br>
+            <p>03. Usa nuestro  creador de sitios web para añadir tus propios textos e imágenes.</p><br>
+            <p>04. Personaliza el sitio con cientos de fuentes, colores e imágenes de stock para que reflejen tu marca.</p><br>
+            <p>05. ¿No tienes un logo? Crea uno sin cargo con nuestra herramientas en línea.</p><br>
+            <p>06. Publica tu sitio y promociónalo con las herramientas paar redes sociales y de marketing por correo electrónico.</p><br>
+            <a class="botondescubre" href="#">Comenzar   ➡</a>
+        </div>
+        <div class="imgdescubre col-5 col-m-5">
+            <img class="imagendescubre" src="https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        </div>
+
+    </div>
+</body>
+</html>
